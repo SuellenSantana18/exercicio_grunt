@@ -6,10 +6,11 @@ module.exports = function(grunt) {
     })
 }
 
+
 module.exports = function(grunt) {
   grunt.initConfig({
     // suas tarefas aqui (ex: less, uglify, etc)
-    pkg: grunt.file.readJSON('Package.json'),
+    pkg: grunt.file.readJSON('package.json'),
     less: {
       development: {
         files: {
