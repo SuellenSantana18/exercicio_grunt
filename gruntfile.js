@@ -1,10 +1,3 @@
-const { task } = require("grunt");
-
-module.exports = function(grunt) {
-    grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
-    })
-}
 
 
 module.exports = function(grunt) {
@@ -96,13 +89,13 @@ module.exports = function(grunt) {
         }
       },
       clean: ['prebuild'],
-      uglify: {
-        target: {
-          files: {
-            'dist/script/main.min.js': 'src/scripts/main.js'
-          }
-        }
-      }
+ uglify: {
+  target: {
+    files: {
+      'dist/scripts/main.min.js': 'src/scripts/main.js'
+    }
+  }
+}
 
   });
 
